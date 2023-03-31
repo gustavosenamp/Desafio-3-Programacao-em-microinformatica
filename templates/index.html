@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/normalize.css"">
-</head>
-<body>
-    <header class="navegacao">
-        <img  src="../imagens/logo.jpeg" alt="Logo">
-        <nav>
-            <a href="index.html">Home |</a>
-            <a href="quem-somos.html">Quem Somos |</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
+{% extends 'base.html' %}
+{% block conteudo %}
     <main class="principal">
         <div class="principal-img">
-            <img class="imagem-fundo-principal" src="../imagens/capa.jpeg">
+            <img class="imagem-fundo-principal" src="../static/imagens/capa.jpeg">
         </div>
         <div class="principal-texto">
             <h1>Sobre a Universidade</h1>
@@ -36,5 +19,4 @@
         <p class="texto-footer">Todos direitos Reservados</p>
     </footer>
     
-</body>
-</html>
+{% endblock %}

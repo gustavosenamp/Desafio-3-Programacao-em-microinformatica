@@ -1,12 +1,28 @@
 
-{% block conteudo %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/normalize.css')}}">
+</head>
+<body>
     <header class="navegacao">
-        <img  src="../imagens/logo.jpeg" alt="Logo">
+        <img  src="../static/imagens/logo.jpeg" alt="Logo">
         <nav>
-            <a href="index.html">Home |</a>
-            <a href="quem-somos.html">Quem Somos |</a>
-            <a href="contato.html">Contato</a>
+            <a href="/">Home |</a>
+            <a href="/quem-somos">Quem Somos |</a>
+            <a href="/contato">Contato</a>
         </nav>
     </header>
 
-{% endblock %}
+
+    {% block conteudo %}
+    {% endblock %}
+
+
+</body>
+</html>
