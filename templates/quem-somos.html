@@ -1,9 +1,8 @@
-<head>
-    <link  rel="stylesheet" href="{{url_for('static', filename='./css/quem-somos.css')}}">
-    <title>Quem Somos</title>
-</head>
-
 {% extends 'base.html' %}
+{% block css %}href="{{url_for('static', filename='./css/quem-somos.css')}}"{% endblock %}
+{% block titulo %}Quem-somos{% endblock %}
+
+
 {% block conteudo %}
     <main class="principal">
         <div class="principal-cima">
