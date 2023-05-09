@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request, url_for, jsonify
-
 from flask_mysqldb import MySQL
 
 app = Flask(__name__)
+Bootstrap(app)
 
 # conexão com o banco de dados
 app.config['MYSQL_Host'] = 'localhost' # 127.0.0.1
@@ -12,21 +12,14 @@ app.config['MYSQL_DB'] = 'contatos'
 
 mysql = MySQL(app)
 
-
 @app.route('/')
+@app.route('/index')
 def index():
     return render_template('index.html')
 
-@app.route('/contato')
-
-def contato():
-    return render_template('contato.html')
-
 @app.route('/quem-somos')
-
 def quem_somos():
     return render_template('quem-somos.html')
-
 
 @app.route('/contatos', methods=['GET', 'POST'])
 def contatos():
