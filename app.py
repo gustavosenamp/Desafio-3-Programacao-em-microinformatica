@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, url_for, jsonify
 from flask_mysqldb import MySQL
 
 app = Flask(__name__)
-Bootstrap(app)
 
 # conexão com o banco de dados
 app.config['MYSQL_Host'] = 'localhost' # 127.0.0.1
@@ -36,7 +35,7 @@ def contatos():
         cur.close()
 
         return 'sucesso'
-    return render_template('contatos.html')
+    return render_template('contato.html')
 
 
 # rota usuários para listar todos os usuário no banco de dados.

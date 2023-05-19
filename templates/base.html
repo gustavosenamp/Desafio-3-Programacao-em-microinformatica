@@ -8,20 +8,25 @@
     <title>{% block titulo %}{% endblock %}</title>
     <link rel="stylesheet" {% block css %}{% endblock %}>
     <link rel="stylesheet" href="{{url_for('static', filename='./css/normalize.css')}}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 </head>
 <body>
     <header class="navegacao">
         <img  src="../static/imagens/logo.jpeg" alt="Logo">
         <nav>
-            <a href="/">Home |</a>
-            <a href="/quem-somos">Quem Somos |</a>
-            <a href="/contatos">Contato</a>
+            <a href="/index">Home </a>|
+            <a href="/quem-somos">Quem Somos </a>|
+            <a href="/contatos">Contato </a>|
             <a href="/users">Lista</a>
         </nav>
     </header>
 
     {% block conteudo %}
     {% endblock %}
+
+    <footer>
+        <p class="texto-footer">Todos direitos Reservados</p>
+    </footer>
 
 </body>
 </html>
