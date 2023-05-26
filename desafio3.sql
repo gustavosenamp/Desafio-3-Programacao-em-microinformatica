@@ -11,3 +11,6 @@ use desafio3;
 
 select * from contato;
 #show databases;
+
+insert into contato values
+("jeancosta@gmail.com", "Flask + MySQL", "Desenvolvimento web");
