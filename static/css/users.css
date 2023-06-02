@@ -6,6 +6,45 @@
     
 }
 
+body{
+    font: normal;
+    font-size: 15pt;
+    color: black;
+    background-color: white;
+
+}
+
+.navegacao{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 5px solid blue;
+}
+
+.navegacao nav{
+    display: flex;
+    gap: 5px;
+}
+
+
+.navegacao img{
+   height: 80px;
+   width: 280px;
+}
+
+.navegacao a{
+    font-size: 20px;
+    colo: black;
+
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgba(63, 101, 182, 0.925)
+}
 /* Página Usuários */
 table, th, td{
     border: 1px solid black;
@@ -14,6 +53,16 @@ table, th, td{
 th, td{
     padding: 5px 10px;
 }
+
 th{
-    background-color: rgba(109, 119, 168, 0.459);
+    background-color:rgba(109, 119, 168, 0.47);
 }
+
+.texto-footer{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+

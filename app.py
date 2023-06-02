@@ -19,7 +19,7 @@ def home():
 def quemsomos():
     return render_template("quem-somos.html")
 
-@app.route('/contatos', methods=['GET', 'POST'])
+@app.route('/contato', methods=['GET', 'POST'])
 def contato():
     if request.method == 'POST':
         email = request.form['email']

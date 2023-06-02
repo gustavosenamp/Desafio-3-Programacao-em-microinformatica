@@ -1,16 +1,15 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% block css %}href="{{url_for('static', filename='./css/users.css')}}"{% endblock %}
 {% block titulo %}Users{% endblock %}
-
-<div style="overflow-x:auto;">
+{% block conteudo %}
+<br>
+<div style="width: 100%; display: flex; justify-content: center; align-items: center;">
     <table id="users" class="display">
         <thead>
-
             <tr>
                 <th>E-mail</th>
                 <th>Assunto</th>
                 <th>Descrição</th>
-
             </tr>
         </thead>
 
@@ -24,10 +23,8 @@
             </tr>
         </tbody>
 
-
         {% endfor %}
 
     </table>
 </div>
-
 {% endblock %}

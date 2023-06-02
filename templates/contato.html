@@ -13,13 +13,13 @@
             <hr>
         </div>
         <div class="principal-baixo">
-            <form>
-                Seu email:<br>
+            <form method="post" action="/contato">
+                <label for="email">Seu e-mail:</label><br>
                 <input type="text" name="email" placeholder="Digite seu email"> <br>
-                Assunto:<br>
+                <label for="assunto">Assunto:</label><br>
                 <input type="text" name="assunto" placeholder="Assunto"> <br>
-                Descrição:<br>
-                <input class="input-descricao" type="text" name="descrição" placeholder="Descreva o assunto"> <br>
+                <label for="descricao">Descrição:</label><br>
+                <input class="input-descricao" type="text" name="descricao" placeholder="Descreva o assunto"> <br>
                 <input class="input-enviar" type="submit" value="Enviar" >
             </form>
         </div>
